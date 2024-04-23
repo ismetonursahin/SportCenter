@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link href="./input.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="font-family: Poppins, sans-serif">
+    <!-- Header  -->
+
+    <header
+      class="fixed z-10 bg-transparent text-white font-semibold text-xl"
+      style="width: 100%"
+    >
+      <nav
+        id="navbar"
+        class="flex flex-row mx-auto justify-between px-4 sm:justify-evenly items-center"
+      >
+        <div>
+          <img src="Resimler/logo.png" />
+        </div>
+
+        <label for="menu-btn" id="hamburger">
+          <svg
+            class="w-8"
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            version="1.2"
+            baseProfile="tiny"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 17h-14c-1.103 0-2 .897-2 2s.897 2 2 2h14c1.103 0 2-.897 2-2s-.897-2-2-2zM19 10h-14c-1.103 0-2 .897-2 2s.897 2 2 2h14c1.103 0 2-.897 2-2s-.897-2-2-2zM19 3h-14c-1.103 0-2 .897-2 2s.897 2 2 2h14c1.103 0 2-.897 2-2s-.897-2-2-2z"
+            ></path></svg
+        ></label>
+        <input id="menu-btn" type="checkbox" />
+
+        <div class="sm:flex flex-row gap-0 sm:gap-x-6 sm:items-center links">
+          <a class="link" href="#home">Home</a>
+          <a class="link" href="#classes">Classes</a>
+          <a class="link" href="#best-trainers">Trainer</a>
+          <a class="link" href="#review">Rewiew</a>
+          <a class="link" href="#contact">Contact</a>
+          <a
+            id="join-btn"
+            class="bg-secondary rounded py-2 px-4 hover:bg-primary"
+            href=""
+            >JOIN US</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <section id="home" class="flex items-center font-bold text-white">
+      <div
+        class="container mx-auto px-6 sm:px-44 flex flex-col py-8 sm:py-0 mt-16 sm:mt-0"
+      >
+        <div>
+          <h3
+            class="py-1 px-4 bg-primary rounded-md text-xl inline-flex shadow"
+          >
+            POWERFULL
+          </h3>
+        </div>
+        <div>
+          <h1 class="text-8xl font-bold mt-1 shadow">
+            Group <br />Practice <br />With Trainer
+          </h1>
+        </div>
+        <div
+          class="text-3xl tracking-wide leading-13 mt-2"
+          style="background-color: rgba(0, 0, 0, 0.582)"
+        >
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rem
+            labore doloribus quisquam iure illo magni accusamus? Quod cumque
+            aperiam.
+          </p>
+        </div>
+        <div
+          class="mt-8 text-2xl flex flex-col sm:flex-row gap-x-12 sm:gap-x-16 pl-0 sm:pl-3 sm:px-0"
+        >
+          <a
+            class="text-center py-2 px-6 bg-primary rounded-md border-2 border-primary hover:border-white hover:bg-secondary"
+            href=""
+            >Sign Up</a
+          >
+          <a
+            class="py-2 px-6 rounded-md border-2 text-center mt-2 sm:mt-0 hover:bg-secondary"
+            href=""
+            >Details</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Out -->
+
+    <section class="bg-bg_color py-10 flex justify-around items-center">
+      <div class="grid grid-cols-1 sm:grid-cols-4">
+        <div class="grid mr-8 my-2">
+          <div
+            class="flex flex-col justify-center items-center bg-white font-bold py-6 px-14"
+          >
+            <h1 class="text-primary text-3xl">325</h1>
+            <h2 class="mt-6 text-2xl font-extrabold">Course</h2>
+          </div>
+        </div>
+        <div class="grid mr-8 my-2">
+          <div
+            class="flex flex-col justify-center items-center bg-white font-bold py-6 px-14"
+          >
+            <h1 class="text-primary text-3xl">405</h1>
+            <h2 class="mt-6 text-2xl font-extrabold">Work Out</h2>
+          </div>
+        </div>
+        <div class="grid mr-8 my-2">
+          <div
+            class="flex flex-col justify-center items-center bg-white font-bold py-6 px-14"
+          >
+            <h1 class="text-primary text-3xl">305</h1>
+            <h2 class="mt-6 text-2xl font-extrabold">Working Hour</h2>
+          </div>
+        </div>
+        <div class="grid mr-8 my-2">
+          <div
+            class="flex flex-col justify-center items-center bg-white font-bold py-6 px-14"
+          >
+            <h1 class="text-primary text-3xl">705</h1>
+            <h2 class="mt-6 text-2xl font-extrabold">Happy Client</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Classes -->
+
+    <section
+      id="classes"
+      class="classesBg flex flex-col items-center py-12 relative"
+    >
+      <div class="class-clip"></div>
+      <div class="mb-14">
+        <h1 class="text-primary title">OUR CLASSES</h1>
+      </div>
+      <div class="font-bold text-text_two text-xl">
+        <p class="" style="text-align: center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+          excepturi exercitationem. <br />
+          Hampden-Sydney College.
+        </p>
+      </div>
+      <div
+        id="buttons"
+        class="container px-10 mx-auto mt-10 font-bold grid grid-cols-2 sm:grid-cols-4 sm:px-80 gap-x-6 gap-y-2 justify-evenly items-center py-4 text-text_one"
+      >
+        <button
+          id="yoga"
+          class="bg-primary flex justify-center items-center py-4 text-2xl rounded hover:bg-secondary"
+        >
+          Yoga
+        </button>
+        <button
+          id="group"
+          class="bg-primary flex justify-center items-center py-4 text-2xl rounded hover:bg-secondary"
+        >
+          Group
+        </button>
+        <button
+          id="solo"
+          class="bg-primary flex justify-center items-center py-4 text-2xl rounded hover:bg-secondary"
+        >
+          Solo
+        </button>
+        <button
+          id="stretching"
+          class="bg-primary flex justify-center items-center py-4 text-2xl rounded hover:bg-secondary"
+        >
+          Stretching
+        </button>
+      </div>
+
+      <div
+        id="classes-content"
+        class="container mx-auto text-text_two grid grid-cols-1 sm:grid-cols-2 py-4 sm:px-48 font-bold"
+      >
+        <div class="flex flex-col px-6 sm:px-2">
+          <div id="content-one" class="mb-6">
+            <h1 class="text-2xl">Why are your Yoga?</h1>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              itaque incidunt iusto fuga! Odit dolorem similique ad culpa
+              corrupti earum blanditiis consectetur saepe aliquam ratione dolore
+              hic facilis quo veniam, molestias vel dolores quia, unde iusto
+              nemo minima quod dolorum?
+            </p>
+          </div>
+          <div id="content-two">
+            <h1 class="text-2xl">When comes Yoga Your Time.</h1>
+            <br />
+            <p>Saturday-Sunday: 8:00am - 10:00am</p>
+            <br />
+            <p>Monday-Tuesday: 8:00am - 10:00am</p>
+            <br />
+            <p>Wednesday-Friday: 3:00am - 6:00am</p>
+          </div>
+        </div>
+        <div class="flex items-center mt-4 sm:mt-10">
+          <img src="Resimler/yoga.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Body Index -->
+
+    <section
+      class="bodyIndex py-8 sm:gap-12 font-bold grid grid-cols-1 sm:grid-cols-2 container mx-auto px-4 sm:px-44 text-text_two"
+    >
+      <div id="bmi">
+        <div class="">
+          <h1 class="text-3xl text-primary">BMI Calculator</h1>
+          <p class="mt-2 sm:mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
+            repellat illo vel non ducimus dolor eaque repellendus rem ab, aut
+            voluptatibus exercitationem soluta sequi laboriosam.
+          </p>
+          <p class="mt-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
+            voluptatem. Atque voluptate cumque tempora harum at aliquam,
+            possimus rem autem. Nisi eveniet iure incidunt maxime.
+          </p>
+        </div>
+        <div class="mt-10 font-normal flex flex-row gap-2 items-center">
+          <input
+            id="height"
+            class="rounded border font-normal text-xs py-2 px-4 outline outline-1"
+            type="number"
+            placeholder="Your Height"
+          />cm
+          <input
+            id="weight"
+            class="rounded border font-normal text-xs py-2 px-4 outline outline-1"
+            type="number"
+            placeholder="Your Weight"
+          />kg
+        </div>
+      </div>
+      <div class="relative">
+        <h1 class="text-xl font-semibold items-center justify-center flex mt-2">
+          Your BMI : <span id="bmi-span"></span>
+        </h1>
+        <img class="py-2 px-2 mt-1" src="Resimler/bmi-index.jpg" alt="" />
+        <div id="triangle"></div>
+      </div>
+    </section>
+
+    <!-- Best Trainers -->
+
+    <!-- after olayı sor -->
+
+    <section
+      id="best-trainers"
+      class="flex flex-col items-center py-6 sm:py-6 mx-auto trainers bg-bg_color"
+    >
+      <div id="title">
+        <h1 class="title mt-2 sm:mt-6">OUR BEST TRAINERS</h1>
+      </div>
+      <div class="font-bold text-text_two mt-6 sm:mt-12 text-center text-xl">
+        <p class="">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus,
+          laborum.
+        </p>
+        <p>Hampden-Sydney College.</p>
+      </div>
+      <div
+        id="trainers"
+        class="grid grid-cols-1 sm:grid-cols-3 gap-10 mt-4 sm:mt-12"
+      >
+        <div class="py-3 px-3 relative z-20 content overflow-hidden">
+          <div>
+            <img
+              src="Resimler/trainer1.jpg"
+              class="border border-secondary rounded-md cursor-pointer"
+              alt=""
+            />
+            <div class="borders z-10"></div>
+            <div
+              class="trainersName flex flex-col items-center justify-center text-white"
+            >
+              <h1 class="text-2xl font-semibold">John Doe</h1>
+              <h4 class="text-xl">Cardio Trainer</h4>
+            </div>
+          </div>
+        </div>
+        <div class="py-3 px-3 relative z-20 content overflow-hidden">
+          <div>
+            <img
+              src="Resimler/trainer2.jpg"
+              class="border border-secondary rounded-md cursor-pointer"
+              alt=""
+            />
+            <div class="borders z-10"></div>
+            <div
+              class="trainersName flex flex-col items-center justify-center text-white"
+            >
+              <h1 class="text-2xl font-semibold">John Doe</h1>
+              <h4 class="text-xl">Cardio Trainer</h4>
+            </div>
+          </div>
+        </div>
+        <div class="py-3 px-3 relative z-20 content overflow-hidden">
+          <div>
+            <img
+              src="Resimler/trainer3.jpg"
+              class="border border-secondary rounded-md cursor-pointer"
+              alt=""
+            />
+            <div class="borders z-10"></div>
+            <div
+              class="trainersName flex flex-col items-center justify-center text-white"
+            >
+              <h1 class="text-2xl font-semibold">John Doe</h1>
+              <h4 class="text-xl">Cardio Trainer</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Purcahse From Us -->
+
+    <section
+      id="purchase"
+      class="flex flex-col items-center py-2 sm:py-6 mx-auto trainers bg-white purchase"
+    >
+      <div id="title">
+        <h1 class="title mt-2 sm:mt-6">PURCHASE FROM US</h1>
+      </div>
+      <div class="font-bold text-text_two text-xl mt-10 sm:mt-20 text-center">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus,
+          laborum.
+        </p>
+        <p>Hampden-Sydney College.</p>
+      </div>
+
+      <div
+        class="container mx-auto grid grid-cols-1 sm:grid-cols-4 gap-6 px-4 sm:px-48 mt-5 sm:mt-28 font-bold cursor-pointer"
+      >
+        <div class="border-2 rounded-xl shadow-2xl pb-2 purchaseHover">
+          <div>
+            <img class="rounded-t-xl" src="Resimler/purchase1.jpg" alt="" />
+          </div>
+          <div class="">
+            <h1 class="text-2xl text-center">Kettlebell / 5kg</h1>
+            <h3 class="text-center mt-2 text-sm">
+              <span class="line-through">89,99$ </span>/ 59,99$
+            </h3>
+            <h3 class="text-center mt-6">Add To Cart</h3>
+          </div>
+        </div>
+        <div class="border-2 rounded-xl shadow-2xl purchaseHover">
+          <div>
+            <img class="rounded-t-xl" src="Resimler/purchase2.jpg" alt="" />
+          </div>
+          <div class="">
+            <h1 class="text-2xl text-center">Treadmill</h1>
+            <h3 class="text-center mt-2 text-sm">
+              <span class="line-through">899,99$ </span>/ 599,99$
+            </h3>
+            <h3 class="text-center mt-6">Add To Cart</h3>
+          </div>
+        </div>
+        <div class="border-2 rounded-xl shadow-2xl purchaseHover">
+          <div>
+            <img class="rounded-t-xl" src="Resimler/purchase3.jpg" alt="" />
+          </div>
+          <div class="">
+            <h1 class="text-2xl text-center">Adjustable Dumbbell</h1>
+            <h3 class="text-center mt-2 text-sm">
+              <span class="line-through">89,99$ </span>/ 59,99$
+            </h3>
+            <h3 class="text-center mt-6">Add To Cart</h3>
+          </div>
+        </div>
+        <div class="border-2 rounded-xl shadow-2xl purchaseHover">
+          <div>
+            <img class="rounded-t-xl" src="Resimler/purchase4.jpg" alt="" />
+          </div>
+          <div class="">
+            <h1 class="text-2xl text-center">Kettlebell / 3kg</h1>
+            <h3 class="text-center mt-2 text-sm">
+              <span class="line-through">89,99$ </span>/ 39,99$
+            </h3>
+            <h3 class="text-center mt-6">Add To Cart</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review Client -->
+    <section
+      id="review"
+      class="flex flex-col items-center py-8 sm:py-8 mx-auto trainers bg-bg_color"
+    >
+      <div id="title">
+        <h1 class="title mt-2 sm:mt-6">REVIEW CLIENT</h1>
+      </div>
+      <div
+        class="font-bold text-text_two mt-10 sm:mt-16 text-center text-xl px-3"
+      >
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus,
+          laborum.
+        </p>
+        <p>Hampden-Sydney College.</p>
+      </div>
+      <div
+        class="container mx-auto grid grid-cols-1 sm:grid-cols-2 px-6 sm:px-36 gap-x-28 mt-12 sm:mt-16 pb-8"
+      >
+        <div class="flex flex-col px-2">
+          <div class="flex items-center py-2 sm:py-5 gap-x-3">
+            <div class="w-16">
+              <img class="rounded-full" src="Resimler/client1.jpg" alt="" />
+            </div>
+            <div class="text-text_two">
+              <h1 class="text-xl font-semibold">Diet Expert</h1>
+              <h3 class="font-medium text-lg">CFO</h3>
+            </div>
+          </div>
+          <div
+            class="bg-primary py-2 sm:py-5 px-2 sm:px-6 text-text_one font-normal client relative"
+          >
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+              earum maiores a, doloribus sequi culpa, facilis ipsa quibusdam
+              dolores laudantium suscipit maxime laborum omnis error itaque
+              consequatur voluptate impedit officiis!
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col px-2 mt-14 sm:mt-0">
+          <div class="flex items-center py-2 sm:py-5 gap-x-3">
+            <div class="w-16">
+              <img class="rounded-full" src="Resimler/client2.jpg" alt="" />
+            </div>
+            <div class="text-text_two">
+              <h1 class="text-xl font-semibold">Cardio Trainer</h1>
+              <h3 class="font-medium text-lg">CFO</h3>
+            </div>
+          </div>
+          <div
+            class="bg-primary py-2 sm:py-5 px-2 sm:px-6 text-text_one font-normal client relative"
+          >
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+              earum maiores a, doloribus sequi culpa, facilis ipsa quibusdam
+              dolores laudantium suscipit maxime laborum omnis error itaque
+              consequatur voluptate impedit officiis!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact US -->
+    <section
+      id="contact"
+      class="flex flex-col items-center py-8 sm:py-8 mx-auto trainers bg-white"
+    >
+      <div id="title">
+        <h1 class="title mt-2 sm:mt-6">CONTACT US</h1>
+      </div>
+      <div
+        class="font-bold text-text_two mt-10 sm:mt-16 text-center text-xl px-4"
+      >
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus,
+          laborum.
+        </p>
+        <p>Hampden-Sydney College.</p>
+      </div>
+      <div
+        class="px-4 sm:px-24 grid grid-cols-1 sm:grid-cols-2 font-semibold text-text_two mt-5 sm:mt-12"
+      >
+        <div class="1 flex flex-col px-7">
+          <div class="2 flex gap-4">
+            <div class="3">
+              <h3 class="text-2xl">Mobile Number</h3>
+              <h4>+1235 1212 11 22</h4>
+            </div>
+            <div class="3">
+              <h3 class="text-2xl">Email Address</h3>
+              <h4>contact@mail.com</h4>
+            </div>
+          </div>
+          <div class="2 mt-5">
+            <h1 class="text-3xl">Make An Appointment</h1>
+          </div>
+          <div class="2 flex flex-col gap-4 mt-6 sm:mt-6 font-normal">
+            <input
+              type="text"
+              class="bg-bg_color py-2 px-2 rounded-sm"
+              placeholder="Your Name"
+            />
+            <input
+              type="text"
+              class="bg-bg_color py-2 px-2 rounded-sm"
+              placeholder="Your Email"
+            />
+            <textarea
+              name=""
+              style="resize: none"
+              class="bg-bg_color py-2 px-2 h-52 rounded-sm"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+        </div>
+        <div class="1 mt-3 sm:mt-0 py-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d543195.9386672532!2d40.01755821206244!3d41.22696421954457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4067b75371661589%3A0xd4aee3a7fd4818da!2sArhavi%2C%20Artvin!5e0!3m2!1str!2str!4v1713777446203!5m2!1str!2str"
+            width="500"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer  -->
+
+    <footer class="footer bg-primary flex flex-col font-medium text-white">
+      <div class="container mx-auto px-8 sm:px-72">
+        <img src="Resimler/logo.png" alt="" />
+      </div>
+      <div class="container mx-auto px-8 sm:px-72">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+          quasi dolores alias voluptatibus. Animi, maiores? Quam modi ratione
+          velit officiis illo aperiam, reiciendis tenetur reprehenderit vero
+          unde omnis expedita mollitia.
+        </p>
+      </div>
+      <div
+        class="container mx-auto grid grid-cols-2 sm:grid-cols-2 px-8 sm:px-72"
+      >
+        <div class="py-6 sm:py-6">
+          <h1 class="text-3xl font-medium">Information</h1>
+          <div class="flex flex-col gap-4 mt-4">
+            <a>About Us</a>
+            <a>Classes</a>
+            <a>Blog</a>
+            <a>Content</a>
+          </div>
+        </div>
+        <div class="py-6 sm:py-6">
+          <h1 class="text-3xl font-medium">Helpful Links</h1>
+          <div class="flex flex-col gap-4 mt-4">
+            <a>Services</a>
+            <a>Supports</a>
+            <a>Terms & Condition</a>
+            <a>Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
