@@ -108,7 +108,7 @@
     cursor: pointer;
     display: block;
   }
-  .links {
+  #links {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -122,19 +122,8 @@
     position: absolute;
     transition: all 1s;
   }
-  .links a:hover {
+  #links a:hover {
     transform: scale(1.1);
-  }
-  #menu-btn {
-    display: none;
-  }
-  #menu-btn:checked ~ .links {
-    transform: translateX(0);
-    top: 4.5rem;
-  }
-
-  a:active ~ .links {
-    background-color: rgb(51, 116, 172);
   }
 }
 
@@ -173,6 +162,7 @@
   background-color: #355592;
   transform: translateY(-50%);
   z-index: -1;
+  transition: all 0.5s;
 }
 
 .borders::before {
@@ -185,6 +175,7 @@
   background-color: #355592;
   transform: translateX(-50%);
   z-index: -1;
+  transition: all 0.5s;
 }
 
 .trainersName {
@@ -216,6 +207,14 @@
 .content:hover .trainersName {
   transform: translateY(0%);
   bottom: 5%;
+}
+
+.content:hover .borders::after {
+  height: 60%;
+}
+
+.content:hover .borders::before {
+  width: 60%;
 }
 
 .purchaseHover:hover {

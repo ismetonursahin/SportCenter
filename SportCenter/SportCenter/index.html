@@ -16,7 +16,7 @@
     <!-- Header  -->
 
     <header
-      class="fixed z-10 bg-transparent text-white font-semibold text-xl"
+      class="fixed z-30 bg-transparent text-white font-semibold text-xl"
       style="width: 100%"
     >
       <nav
@@ -27,8 +27,9 @@
           <img src="Resimler/logo.png" />
         </div>
 
-        <label for="menu-btn" id="hamburger">
+        <label for="menu-btn">
           <svg
+            id="hamburger"
             class="w-8"
             stroke="currentColor"
             fill="currentColor"
@@ -42,9 +43,11 @@
               d="M19 17h-14c-1.103 0-2 .897-2 2s.897 2 2 2h14c1.103 0 2-.897 2-2s-.897-2-2-2zM19 10h-14c-1.103 0-2 .897-2 2s.897 2 2 2h14c1.103 0 2-.897 2-2s-.897-2-2-2zM19 3h-14c-1.103 0-2 .897-2 2s.897 2 2 2h14c1.103 0 2-.897 2-2s-.897-2-2-2z"
             ></path></svg
         ></label>
-        <input id="menu-btn" type="checkbox" />
 
-        <div class="sm:flex flex-row gap-0 sm:gap-x-6 sm:items-center links">
+        <div
+          id="links"
+          class="sm:flex flex-row gap-0 sm:gap-x-6 sm:items-center"
+        >
           <a class="link" href="#home">Home</a>
           <a class="link" href="#classes">Classes</a>
           <a class="link" href="#best-trainers">Trainer</a>
@@ -72,12 +75,12 @@
           </h3>
         </div>
         <div>
-          <h1 class="text-8xl font-bold mt-1 shadow">
+          <h1 class="text-6xl sm:text-8xl font-bold mt-1 shadow">
             Group <br />Practice <br />With Trainer
           </h1>
         </div>
         <div
-          class="text-3xl tracking-wide leading-13 mt-2"
+          class="text-2xl sm:text-3xl tracking-wide leading-13 mt-2"
           style="background-color: rgba(0, 0, 0, 0.582)"
         >
           <p>
@@ -215,7 +218,7 @@
             <p>Wednesday-Friday: 3:00am - 6:00am</p>
           </div>
         </div>
-        <div class="flex items-center mt-4 sm:mt-10">
+        <div class="flex items-center mt-4 sm:mt-10 px-4 sm:px-0">
           <img src="Resimler/yoga.jpg" alt="" />
         </div>
       </div>
@@ -341,7 +344,7 @@
 
     <section
       id="purchase"
-      class="flex flex-col items-center py-2 sm:py-6 mx-auto trainers bg-white purchase"
+      class="flex flex-col items-center px-16 sm:px-auto py-2 sm:py-6 mx-auto trainers bg-white purchase"
     >
       <div id="title">
         <h1 class="title mt-2 sm:mt-6">PURCHASE FROM US</h1>
@@ -355,7 +358,7 @@
       </div>
 
       <div
-        class="container mx-auto grid grid-cols-1 sm:grid-cols-4 gap-6 px-4 sm:px-48 mt-5 sm:mt-28 font-bold cursor-pointer"
+        class="container mx-auto grid grid-cols-1 sm:grid-cols-4 gap-6 px-4 sm:px-48 mt-5 sm:mt-28 font-bold cursor-pointer py-6"
       >
         <div class="border-2 rounded-xl shadow-2xl pb-2 purchaseHover">
           <div>

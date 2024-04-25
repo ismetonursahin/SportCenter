@@ -683,6 +683,10 @@ video {
   z-index: 20;
 }
 
+.z-30 {
+  z-index: 30;
+}
+
 .float-start {
   float: inline-start;
 }
@@ -2114,6 +2118,11 @@ video {
   padding-right: 3.5rem;
 }
 
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -2262,8 +2271,8 @@ video {
   line-height: 2.25rem;
 }
 
-.text-8xl {
-  font-size: 6rem;
+.text-6xl {
+  font-size: 3.75rem;
   line-height: 1;
 }
 
@@ -2915,7 +2924,7 @@ video {
     display: block;
   }
 
-  .links {
+  #links {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -2930,21 +2939,8 @@ video {
     transition: all 1s;
   }
 
-  .links a:hover {
+  #links a:hover {
     transform: scale(1.1);
-  }
-
-  #menu-btn {
-    display: none;
-  }
-
-  #menu-btn:checked ~ .links {
-    transform: translateX(0);
-    top: 4.5rem;
-  }
-
-  a:active ~ .links {
-    background-color: rgb(51, 116, 172);
   }
 }
 
@@ -2984,6 +2980,7 @@ video {
   background-color: #355592;
   transform: translateY(-50%);
   z-index: -1;
+  transition: all 0.5s;
 }
 
 .borders::before {
@@ -2996,6 +2993,7 @@ video {
   background-color: #355592;
   transform: translateX(-50%);
   z-index: -1;
+  transition: all 0.5s;
 }
 
 .trainersName {
@@ -3035,13 +3033,24 @@ video {
     0% 85%
   );
   transform: translateY(100%);
+  transition: all 0.3s linear;
 }
 
-#trainers img:hover {
-  .trainersName {
-    bottom: 10%;
-    transform: translateY(0%);
-  }
+.content:hover .trainersName {
+  transform: translateY(0%);
+  bottom: 5%;
+}
+
+.content:hover .borders::after {
+  height: 60%;
+}
+
+.content:hover .borders::before {
+  width: 60%;
+}
+
+.purchaseHover:hover {
+  transform: scale(1.04);
 }
 
 @media (min-width: 640px) {
@@ -3269,6 +3278,16 @@ video {
 
   .sm\:pl-3 {
     padding-left: 0.75rem;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .sm\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
   }
 
   .sm\:underline {
