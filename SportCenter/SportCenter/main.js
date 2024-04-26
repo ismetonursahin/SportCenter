@@ -185,11 +185,22 @@ let hamburgerIcon = document.querySelector("#hamburger");
 let navigationBar = document.querySelector("#links");
 
 document.addEventListener("click", (event) => {
-  let id = event.target.id;
+  let screenWidth = window.innerWidth;
+  console.log(screenWidth);
 
-  if (id !== "hamburger") {
-    navigationBar.style.transform = "translateY(-100%)";
-  } else if (id == "hamburger") {
-    navigationBar.style.transform = "translateY(17%)";
+  let id = event.target.id;
+  if (screenWidth < 577) {
+    if (id !== "hamburger") {
+      navigationBar.style.transform = "translateY(-100%)";
+    } else if (id == "hamburger") {
+      navigationBar.style.transform = "translateY(17%)";
+    }
+  }
+});
+
+window.addEventListener("resize", (e) => {
+  let width = e.target.innerWidth;
+  if (width > 577) {
+    navigationBar.style.transform = "translateY(0%)";
   }
 });

@@ -15,7 +15,7 @@
 - Navbar üzerindeki linkler ile sayfada ilgili sectiona ilerleyeblirsiniz.
 - Responsive tasarımda navbar, hamburger menü olarak tasarlandı.
 
-### siteyi ziyaret etmek için [tıklayınız...](https://www.google.com)
+### siteyi ziyaret etmek için [tıklayınız...](https://chipper-belekoy-df3f08.netlify.app)
 
 ---
 
