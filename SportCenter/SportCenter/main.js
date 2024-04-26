@@ -190,6 +190,6 @@ document.addEventListener("click", (event) => {
   if (id !== "hamburger") {
     navigationBar.style.transform = "translateY(-100%)";
   } else if (id == "hamburger") {
-    navigationBar.style.transform = "translateY(15%)";
+    navigationBar.style.transform = "translateY(17%)";
   }
 });
